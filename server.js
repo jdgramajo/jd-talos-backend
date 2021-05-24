@@ -48,5 +48,12 @@ const sync = () => {
       });
     });
 
+    db.CATEGORIES.map((category) => {
+      db.Category.create({
+        id: db.CATEGORIES.indexOf(category),
+        name: category
+      });
+    });
+
   });
 }
