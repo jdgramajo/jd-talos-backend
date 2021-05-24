@@ -1,3 +1,4 @@
+const { authJWT } = require('../middleware');
 const controller = require('../controllers/book.controller');
 
 module.exports = (app) => {
@@ -11,6 +12,13 @@ module.exports = (app) => {
 
   app.get(
     '/book',
+    [authJWT.verifyToken],
     controller.getAll
   );
+
+  app.post(
+    '/book',
+    [authJWT.verifyToken, authJWT.isAdmin],
+    controller.addBook
+  )
 };
