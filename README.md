@@ -18,10 +18,12 @@ Get a valid `x-access-token` (that will be valid for _one_ minute) by sending a 
 }
 ```
 
-To create a book, first register an admin user, with a valid email and pwd for an admin account, and with a body like:
+To create a book *(only admin tokens have authorization to do so)* send a `POST` request to the `[appURL]:[appPort]/book` endpoint with the `x-access-token` header with a valid admin token as value and a body of:
 ```
 {
-	"title": "Forward the Foundation",
+	"title": String
 	"categories": Array of String values including "fiction", "fantasy", or "novel"
 }
 ```
+
+To list all books *(only valid tokens for a user or admin may do so)* send a `GET` request to the `[appURL]:[appPort]/book` endpoint with a valid token value for the `x-access-token` header key.
