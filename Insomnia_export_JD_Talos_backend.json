@@ -1,0 +1,780 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2021-05-24T05:49:38.828Z",
+  "__export_source": "insomnia.desktop.app:v2021.3.0",
+  "resources": [
+    {
+      "_id": "req_0d24005ac35d4fedb22175c8a16ae746",
+      "parentId": "fld_251a920be8b645b397cadb8864ee8878",
+      "modified": 1621832618769,
+      "created": 1621832586013,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/book",
+      "name": "Create book no token",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"Forward the Foundation\",\n\t\"categories\": [\"fiction\", \"novel\"]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "id": "pair_4953be20258047d9a66c759328d366d4"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1621828931657,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_251a920be8b645b397cadb8864ee8878",
+      "parentId": "wrk_4c66f7be1a844885b7d4872168a3e359",
+      "modified": 1621828916519,
+      "created": 1621828916519,
+      "name": "Books",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1621828916519,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_4c66f7be1a844885b7d4872168a3e359",
+      "parentId": null,
+      "modified": 1621818617258,
+      "created": 1621818617258,
+      "name": "talos",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_2307a21b19f146b498f968b18e7fbf97",
+      "parentId": "fld_251a920be8b645b397cadb8864ee8878",
+      "modified": 1621835222808,
+      "created": 1621828931559,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/book",
+      "name": "Create book",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"Forward the Foundation\",\n\t\"categories\": [\"fiction\", \"novel\"]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "id": "pair_4953be20258047d9a66c759328d366d4"
+        },
+        {
+          "name": "x-access-token",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjIxODM1MjA4LCJleHAiOjE2MjE4MzUyNjh9.-3vOGkr79ISznifARqRlpSnkKisy3xsPpMB3votQYyY",
+          "description": "",
+          "id": "pair_b3a7d768f4324095bde43b27becd0277"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1621828931607,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_dbfa99dc07b3478c8422b9464011c89a",
+      "parentId": "fld_251a920be8b645b397cadb8864ee8878",
+      "modified": 1621835230141,
+      "created": 1621832171621,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/book",
+      "name": "Create book2",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"Harry Potter And The Order of The Phoenix\",\n\t\"categories\": [\"fantasy\", \"novel\"]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "id": "pair_4953be20258047d9a66c759328d366d4"
+        },
+        {
+          "name": "x-access-token",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjIxODM1MjA4LCJleHAiOjE2MjE4MzUyNjh9.-3vOGkr79ISznifARqRlpSnkKisy3xsPpMB3votQYyY",
+          "description": "",
+          "id": "pair_1d8b47e0b42a435ebdfd45bccac15b99"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1621810809320.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b74c1c5f79934af78952b5c146d690c2",
+      "parentId": "fld_bd1c742f38cb4c5f8cbe3f59d3d2c778",
+      "modified": 1621819085167,
+      "created": 1621818617314,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/api/auth/signin",
+      "name": "Sign in user",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"user@talos.com\",\n\t\"password\": \"user123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_d454806b9e544fa1b8947b90e26e085c"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1621792687034,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_bd1c742f38cb4c5f8cbe3f59d3d2c778",
+      "parentId": "wrk_4c66f7be1a844885b7d4872168a3e359",
+      "modified": 1621818617313,
+      "created": 1621818617313,
+      "name": "Sign In",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1621792644737,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_5c00ab76fdc74731b48c47ba060bee55",
+      "parentId": "fld_bd1c742f38cb4c5f8cbe3f59d3d2c778",
+      "modified": 1621819690733,
+      "created": 1621819055143,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/api/auth/signin",
+      "name": "Sign in user2",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"user2@talos.com\",\n\t\"password\": \"user123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_d454806b9e544fa1b8947b90e26e085c"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1621786805984.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_d009f02e9ec94d8ead48d0b31ed01b5c",
+      "parentId": "fld_bd1c742f38cb4c5f8cbe3f59d3d2c778",
+      "modified": 1621819681804,
+      "created": 1621818617316,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/api/auth/signin",
+      "name": "Sign in user bad username",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"badusername@talos.com\",\n\t\"password\": \"user123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_d454806b9e544fa1b8947b90e26e085c"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1621780924935,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_faf59369b4164707b918c3aae536324a",
+      "parentId": "fld_bd1c742f38cb4c5f8cbe3f59d3d2c778",
+      "modified": 1621819664003,
+      "created": 1621818617315,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/api/auth/signin",
+      "name": "Sign in user bad pwd",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"user@talos.com\",\n\t\"password\": \"badpwd\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_d454806b9e544fa1b8947b90e26e085c"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1621769162836,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_5927d28180d64ec8b2fb21d70cbb0dce",
+      "parentId": "fld_bd1c742f38cb4c5f8cbe3f59d3d2c778",
+      "modified": 1621819659187,
+      "created": 1621818617318,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/api/auth/signin",
+      "name": "Sign in admin",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"admin@talos.com\",\n\t\"password\": \"admin123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_d454806b9e544fa1b8947b90e26e085c"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1621769162736,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_406edab35e87402d8b229f62ae1cbab7",
+      "parentId": "fld_cc2c2c13523944ca9b25b35b56c8ba7f",
+      "modified": 1621818617303,
+      "created": 1621818617303,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/api/test/all",
+      "name": "All access",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1621745638638,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_cc2c2c13523944ca9b25b35b56c8ba7f",
+      "parentId": "wrk_4c66f7be1a844885b7d4872168a3e359",
+      "modified": 1621818617302,
+      "created": 1621818617302,
+      "name": "Endpoint Authorization",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1621745638588,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_5b1b3c1e89714844ac4acb0c1fb8d85e",
+      "parentId": "fld_cc2c2c13523944ca9b25b35b56c8ba7f",
+      "modified": 1621823168639,
+      "created": 1621823160274,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/categories",
+      "name": "All access categories",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1621716926587,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ef3b49895c974bc6be381bede99727f5",
+      "parentId": "fld_cc2c2c13523944ca9b25b35b56c8ba7f",
+      "modified": 1621832811361,
+      "created": 1621826118774,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/book",
+      "name": "All books no token",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1621702570561.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b31f9221794e432ebcbbbd817d6bd044",
+      "parentId": "fld_cc2c2c13523944ca9b25b35b56c8ba7f",
+      "modified": 1621835243537,
+      "created": 1621832829295,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/book",
+      "name": "All books with token",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "x-access-token",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjIxODM1MjA4LCJleHAiOjE2MjE4MzUyNjh9.-3vOGkr79ISznifARqRlpSnkKisy3xsPpMB3votQYyY",
+          "description": "",
+          "id": "pair_8e9974d613cc4c1188747a1485f745ae"
+        },
+        {
+          "name": "",
+          "value": "",
+          "description": "",
+          "id": "pair_d49ac4b88d3e4242873009eace7ef059"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1621695392548.75,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_39c1c2cc461e43ff84d7b10e948d59c1",
+      "parentId": "fld_cc2c2c13523944ca9b25b35b56c8ba7f",
+      "modified": 1621818617304,
+      "created": 1621818617304,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/api/test/user",
+      "name": "User no token",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1621688214536,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_7bc205a5c5264251bf5c9307ab95522a",
+      "parentId": "fld_cc2c2c13523944ca9b25b35b56c8ba7f",
+      "modified": 1621819622274,
+      "created": 1621818617308,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/api/test/user",
+      "name": "User with token",
+      "description": "",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "x-access-token",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjIxODE5NTk5LCJleHAiOjE2MjE4MTk2NTl9.IfV0BBaj45eAeHpEyWUzPybZvitDeLLiHIiNCNeFHOA",
+          "description": "",
+          "id": "pair_6da01d14dbb64258bc0f0e537e014b17"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1621673858510.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_66657c0117cf4e838a7071aa8d322327",
+      "parentId": "fld_cc2c2c13523944ca9b25b35b56c8ba7f",
+      "modified": 1621818617307,
+      "created": 1621818617307,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/api/test/admin",
+      "name": "Admin no token",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1621645146459.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_c0fb2fcc57344713b4fd66092d2a451b",
+      "parentId": "fld_cc2c2c13523944ca9b25b35b56c8ba7f",
+      "modified": 1621819719623,
+      "created": 1621818617312,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/api/test/admin",
+      "name": "Admin with token",
+      "description": "",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": ""
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "x-access-token",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjIxODE5NzAyLCJleHAiOjE2MjE4MTk3NjJ9.FA9575K4Zq5j0fNcj7uCoaFofX0NP09TW9wIEPbJFgY",
+          "description": "",
+          "id": "pair_6da01d14dbb64258bc0f0e537e014b17"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1621645146434.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e26e3b8e98664020b708ef9dbab9bd56",
+      "parentId": "fld_1099fa2560f84cae869957ec2adfb041",
+      "modified": 1621818617300,
+      "created": 1621818617300,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}",
+      "name": "Checkup",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1621630790434,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_1099fa2560f84cae869957ec2adfb041",
+      "parentId": "wrk_4c66f7be1a844885b7d4872168a3e359",
+      "modified": 1621818617298,
+      "created": 1621818617298,
+      "name": "Misc",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1621630777676,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_5d487fc256294757824286b0b9095567",
+      "parentId": "fld_459e571555d547ba9138d48bbceb7772",
+      "modified": 1621818656688,
+      "created": 1621818617293,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/api/auth/signup",
+      "name": "Signup user",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"user@talos.com\",\n\t\"password\": \"user123\",\n\t\"roles\": []\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_6b67f6d6b4b44991aa4f3dd04433dc8f"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1621629765995,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_459e571555d547ba9138d48bbceb7772",
+      "parentId": "wrk_4c66f7be1a844885b7d4872168a3e359",
+      "modified": 1621818617285,
+      "created": 1621818617285,
+      "name": "Signup",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1621629699231,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_f3b8d22a796c462fb34e3dbc0b2f972f",
+      "parentId": "fld_459e571555d547ba9138d48bbceb7772",
+      "modified": 1621818666486,
+      "created": 1621818617296,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/api/auth/signup",
+      "name": "Signup user no roles",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"user2@talos.com\",\n\t\"password\": \"user123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_6b67f6d6b4b44991aa4f3dd04433dc8f"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1621629765970,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_80cc4423c5c5471ea82a527ee0cb4f9f",
+      "parentId": "fld_459e571555d547ba9138d48bbceb7772",
+      "modified": 1621818698023,
+      "created": 1621818617289,
+      "url": "{{ _.protocol }}://{{ _.urlAndPort }}/api/auth/signup",
+      "name": "Signup admin",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"admin@talos.com\",\n\t\"password\": \"admin123\",\n\t\"roles\": [\"user\", \"admin\"]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_6b67f6d6b4b44991aa4f3dd04433dc8f"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1621629765895,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_d66b66c37bba4b828026aacd1c60e6f1",
+      "parentId": "wrk_4c66f7be1a844885b7d4872168a3e359",
+      "modified": 1621818617263,
+      "created": 1621818617263,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1621629636934,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_7591efa5cc7a4a58a0aca30312694850",
+      "parentId": "wrk_4c66f7be1a844885b7d4872168a3e359",
+      "modified": 1621818617278,
+      "created": 1621818617278,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_51f900396fd4468c95421f8e0b27da22",
+      "parentId": "wrk_4c66f7be1a844885b7d4872168a3e359",
+      "modified": 1621818617332,
+      "created": 1621818617282,
+      "fileName": "talos",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_bd64cebf57504ad0b4694053933f25ca",
+      "parentId": "env_d66b66c37bba4b828026aacd1c60e6f1",
+      "modified": 1621818617265,
+      "created": 1621818617265,
+      "name": "local jwt",
+      "data": {
+        "protocol": "http",
+        "urlAndPort": "localhost:8080"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "protocol",
+          "urlAndPort"
+        ]
+      },
+      "color": "#7d69cb",
+      "isPrivate": false,
+      "metaSortKey": 1621794603403,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_c0a1f3dcf27e41c5aa3cbbd07932c546",
+      "parentId": "env_d66b66c37bba4b828026aacd1c60e6f1",
+      "modified": 1621824479205,
+      "created": 1621818617274,
+      "name": "JD JWT Heroku DB",
+      "data": {
+        "protocol": "https",
+        "urlAndPort": "jd-jwt-node.herokuapp.com"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "protocol",
+          "urlAndPort"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1621811278437,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_8c0ec4e56c7a4c5c8f69d8aebb0bed94",
+      "parentId": "env_d66b66c37bba4b828026aacd1c60e6f1",
+      "modified": 1621825797614,
+      "created": 1621824481123,
+      "name": "Talos Heroku DB",
+      "data": {
+        "protocol": "https",
+        "urlAndPort": "jd-talos.herokuapp.com"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "protocol",
+          "urlAndPort"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1621811278487,
+      "_type": "environment"
+    }
+  ]
+}

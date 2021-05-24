@@ -1,6 +1,8 @@
 JD Talos Backend App
 ====================
 
+An Insomnia rest client export file for ease of usage is provided as `Insomnia_export_JD_Talos_backend.json` in the root of this repo. However, a brief walktrhough follows.
+
 To create a user send a `POST` request to `[appURL]:[appPort]/api/auth/signup`, body should contain:
 ```
 {
