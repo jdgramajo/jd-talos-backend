@@ -43,6 +43,6 @@ db.Book.belongsToMany(db.Role, {
   otherKey: 'categoryId'
 });
 
-db.CATEGORIES = ['fiction', 'academic', 'drama' ];
+db.CATEGORIES = [ 'fiction', 'academic', 'drama' ];
 
 module.exports = db;
